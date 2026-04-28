@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>221 專題電影節 2025 - 臺中二中</title>
+<title>台中二中 221專題成果發表</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700;900&family=Space+Mono:wght@400;700&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -20,7 +20,8 @@
   body {
     background: var(--bg);
     color: var(--text);
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Space Mono', 'Noto Serif TC', "Microsoft JhengHei", serif;
+	-webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
 
@@ -50,14 +51,32 @@
     padding: 2rem;
   }
 
-  .hero-eyebrow {
-    font-family: 'Space Mono', monospace;
-    color: var(--accent);
-    letter-spacing: 0.5em;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    animation: flicker 2s infinite;
+.hero-eyebrow {
+  /* 優先使用思源宋體，若無則使用系統預設明體 */
+  font-family: 'Microsoft JhengHei', 'Songti TC', 'serif';
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.3em; /* 增加字距更有電影質感 */
+  /* 加上你之前的呼吸發光效果 */
+  animation: breatheGlow 3s ease-in-out infinite;
+	display: inline-block;
+}	
+
+@keyframes breatheGlow {
+  0%, 100% {
+    opacity: 0.5;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+    transform: scale(0.95);
   }
+  50% {
+    opacity: 1;
+    /* 這裡形成強烈的霓虹發光感 */
+    text-shadow: 0 0 10px var(--accent), 
+                 0 0 20px var(--accent), 
+                 0 0 30px #fff;
+    transform: scale(1.02);
+  }
+}
 
   .hero-title {
     font-family: 'Noto Serif TC', serif;
@@ -215,14 +234,20 @@
     .hero-title { font-size: 2.5rem; }
     .movie-grid { grid-template-columns: 1fr; }
   }
+	
+
+
 </style>
 </head>
 <body>
 
 <section class="hero">
-  <p class="hero-eyebrow">The 2025 Project Premiere</p>
-  <h1 class="hero-title">台中二中 221<br>專題發表電影節</h1>
-  <p style="color: var(--accent);">── 全球首映 · 實踐創新的藝術 ──</p>
+  <p style="color: var(--accent);">　ＴＡＩＣＨＵＮＧ　ＳＥＣＯＮＤ　ＳＥＮＩＯＲ　ＨＩＧＨ　ＳＣＨＯＯＬ&nbsp;</p>
+  <h1 class="hero-title">
+	  台中二中 221<br>
+  專題成果發表</h1>
+  
+	<p class="hero-eyebrow">&nbsp; &nbsp;全台首映 現正熱映中&nbsp;</p>
 </section>
 
 <section class="schedule-section">
