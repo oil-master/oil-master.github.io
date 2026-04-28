@@ -226,7 +226,7 @@
   }
 
   /* ── 手機板優化 ── */
-  @media (max-width: 600px) {
+  @media (max-width : 504px ){
     .schedule-item {
       grid-template-columns: 80px 1fr;
     }
@@ -242,8 +242,8 @@
 <body>
 
 <section class="hero">
-  <p style="color: var(--accent);">　ＴＡＩＣＨＵＮＧ　ＳＥＣＯＮＤ　ＳＥＮＩＯＲ　ＨＩＧＨ　ＳＣＨＯＯＬ&nbsp;</p>
-  <h1 class="hero-title">
+  <h2 style="color: var(--accent);">ＴＡＩＣＨＵＮＧ　ＳＥＣＯＮＤ　ＳＥＮＩＯＲ　ＨＩＧＨ　ＳＣＨＯＯＬ&nbsp;</h2>
+<h1 class="hero-title">
 	  台中二中 221<br>
   專題成果發表</h1>
   
@@ -278,10 +278,26 @@
 <script>
 // 1. 資料設定：時刻表
 const SCHEDULE = [
-  { time: "09:00", event: "開幕首映禮", status: "Coming Soon" },
-  { time: "10:00", event: "人文與社會科學場次", status: "Live" },
-  { time: "13:00", event: "自然與工程科學場次", status: "Upcoming" },
-  { time: "15:30", event: "頒獎典禮（金獎專題）", status: "Final" }
+  { time: "8:00~8:20", event: "報到", status: "Coming Soon" },
+  { time: "8:20~8:30", event: "開幕式", status: "Live" },
+  { time: "8:30~8:40", event: "從橢圓加密驗算法發想的加密法 - 超橢圓加密驗算法", status: "Upcoming" },
+	{ time: "8:40~8:50", event: "探討代謝重新編程參與乳癌產生抗藥性之角色", status: "Upcoming" },
+	{ time: "8:50~9:00", event: "碳為觀止-探討氫氧化鈣在不同離子強度下和二氧化碳反應的關係", status: "Upcoming" },
+	{ time: "9:00~9:10", event: "不同刺激物對跳蛛跳躍行為誘導效果之研究", status: "Upcoming" },
+	{ time: "9:10~9:20", event: "演算物理：Blender 在物理模擬的實踐", status: "Upcoming" },
+	{ time: "9:20~9:30", event: "鎂的冒泡的鹽水動力車：鎂在鹽酸中的反應方程式及其應用", status: "Upcoming" },
+	{ time: "9:30~10:10", event: "靜態展", status: "Upcoming" },
+ 
+	{ time: "10:10~10:30", event: "中場休息", status: "Upcoming" },
+	{ time: "10:30~10:40", event: "超音波對阿拉伯芥癒傷組織再生能力之影響", status: "Upcoming" },
+	{ time: "10:40~10:50", event: "痕行霸道，還我清白", status: "Upcoming" },
+	{ time: "10:50~11:00", event: "真相浮出水面？水柱與光碟片浮沉的關係", status: "Upcoming" },
+	{ time: "11:00~11:10", event: "風過之處 海水低語", status: "Upcoming" },
+	{ time: "11:10~11:20", event: "巴斯卡三角形到巴斯卡金字塔的推廣", status: "Upcoming" },
+	{ time: "11:20~11:30", event: "棒球魂與工程腦的碰撞：我的自製發球機圓夢計畫", status: "Upcoming" },
+	{ time: "11:30~11:55", event: "閉幕式", status: "Upcoming" },
+	
+	
 ];
 
 // 2. 資料設定：6大主題與小主題
